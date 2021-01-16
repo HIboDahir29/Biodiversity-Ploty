@@ -15,7 +15,7 @@ d3.json("samples.json").then(function plotly(data) {
             return `<option>${d}</option`;
         });
 
-    // Retrive the selected option and use it to get index
+    // Get the selected option and use it to get index
     var dropdown = d3.select("#selDataset");
     var dropdownValue = dropdown.property("value");
     var index = testid.indexOf(dropdownValue);
